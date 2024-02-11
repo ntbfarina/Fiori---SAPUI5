@@ -1,0 +1,36 @@
+<mvc:View controllerName="assignment1.assignment1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:fiori="sap.ui.webc.fiori"  xmlns:l="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+        <content>
+       <f:SimpleForm id="idSimpleForm" editable="true">
+          <Label text="{i18n>CustomerID}"/>
+          <Input id="idCustomerID" value="" placeholder="Please enter Customer ID"/>
+          <Label text="{i18n>CustomerName}" />
+          <Input id="idCustomerName" value="" placeholder="Please enter Name" />
+          <Label text="{i18n>CustomerEmailAddress}"/>
+          <Input id="idCustomerEmailAddress" value="" placeholder="Please enter Email" />
+          <Label text="{i18n>CustomerPhoneNumber}"/>
+          <Input id="idCustomerPhoneNumber" value="" placeholder="Please enter phone number"/>
+          <Label />
+          <Button width="12rem" text="Login" press="handleClick" type="Emphasized"></Button>
+       </f:SimpleForm>
+      </content>
+
+          
+        <fiori:Page>
+        <fiori:content>
+            <l:HorizontalLayout
+                    class="sapUiContentPadding"
+                    width="300%">
+                    <l:content>
+                
+                    </l:content>
+            </l:HorizontalLayout>
+        </fiori:content>
+    </fiori:Page>
+
+   
+
+</Page>
+</mvc:View>
